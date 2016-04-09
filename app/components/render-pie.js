@@ -18,21 +18,17 @@ export default Ember.Component.extend({
       //alert("ffstga");
 
         var chart = c3.generate({
-            bindto: '#chart',
+            bindto: '#pie',
             data: {
                 columns: [
-                    ['healthy', 60, 80, 80, 60, 85, 75],
-                    ['unhealthy', 40, 20, 20, 40, 15, 25],
+                    ['data1', 40],
+                    ['data2', 60]
                 ],
-                type: 'bar',
-                groups: [
-                    ['healthy', 'unhealthy' ]
-                ]
+                type: 'pie',
+                labels: false
             },
-            grid: {
-                y: {
-            lengthines: [{value:0}]
-                }
+            legend: {
+                hide: true
             }
         });
     });

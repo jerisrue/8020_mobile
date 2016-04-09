@@ -1,5 +1,5 @@
 <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper black">
         <div class="col s12">
             <a href="#!" class="brand-logo">80/20</a>
             <ul class="right "> <!--hide-on-med-and-down">-->
@@ -12,10 +12,16 @@
     </div>
 </nav>
 <div class="container">
-    <h2 class="header">Welcome to Ember</h2>
+    <!--<h2 class="header">Welcome to Ember</h2>
     <div class="row">
         <div class="s12"><span class="flow-text">Example Text</span></div>
-    </div>
+    </div>-->
+
+    <!--div for pie rendering -->
+    {{#render-pie}}
+        <div id="pie"></div>
+    {{/render-pie}}
+
     <!--div for chart rendering -->
     {{#render-chart}}
         <div id="chart"></div>
