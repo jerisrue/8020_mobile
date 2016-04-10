@@ -43,6 +43,10 @@ export default Ember.Component.extend({
                      }
                 },
                 y: {
+                    max: 100,
+                    padding: {
+                        top: 0
+                    },
                     tick: {
                         values: [0, 25, 50, 75, 100]
                     }
