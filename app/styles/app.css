@@ -1,21 +1,13 @@
 /*body > .ember-view {
 	max-height: 40%;
 }*/
+
 body {
 	background: black;
-}
-
-/*c3-legend-item text,
-c3-axis*/
-/*.c3 text {
-   fill: white;
-}
-
-.c3-axis .tick{
 	color: white;
-}*/
-/*
-.path.domain { stroke: white; }*/
+}
+
+/* wording and axis for bar chart */
 .tick text {
 	stroke: white;
 }
@@ -23,29 +15,6 @@ c3-axis*/
 .c3-legend-item text {
 	stroke: white;
 }
-
-
-/*.c3 path, .c3 line {
-  fill: purple;
-  stroke: orange;
-}*/
-
-/*.c3-chart-arc path {
-  stroke: blue;
-
-}
-.c3-chart-arc text {
-  fill: blue;
-  font-size: 13px;
-}*/
-
-/*.c3-line {
-    stroke-width: 8px;
-}
-
-.c3-circle {
-    fill: red !important;
-}*/
 
 .c3 line, .c3 path {
   stroke: white !important;
@@ -56,3 +25,30 @@ c3-axis*/
 .c3-chart-arc path {
 	stroke:	black !important;
 }
+
+/* fallback */
+/*@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  /*src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v14/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');*/
+  /*src: local('Material Icons'), local('MaterialIcons-Regular'), url(vendor/materialize/font/material-design-icons/Material-Design-Icons.woff2) format('woff2');*/
+ /* src: local('Material Icons'), local('MaterialIcons-Regular'), url(../font/Material-Design-Icons.woff2) format('woff2');
+
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}*/
