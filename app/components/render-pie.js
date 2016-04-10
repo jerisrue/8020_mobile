@@ -21,15 +21,22 @@ export default Ember.Component.extend({
             bindto: '#pie',
             data: {
                 columns: [
-                    ['data1', 40],
-                    ['data2', 60]
+                    ['unhealthy', 40],
+                    ['healthy', 60]
                 ],
                 type: 'pie',
-                labels: false
+                labels: false,
+                colors: {
+                    healthy: '#33ff33',
+                    unhealthy: '#ff0033'
+                },
             },
             legend: {
                 hide: true
-            }
+            },
+            tooltip: {
+        		show: false
+			}
         });
     });
   }

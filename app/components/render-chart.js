@@ -20,10 +20,11 @@ export default Ember.Component.extend({
         var chart = c3.generate({
             bindto: '#chart',
             data: {
+                x: 'x',
                 columns: [
-                    ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05', '2013-01-06'],
-                    ['healthy', 60, 80, 80, 60, 85, 75],
-                    ['unhealthy', 40, 20, 20, 40, 15, 25],
+                    ['x', '2013-01-01', '2013-01-02', '2013-01-03', '2013-01-04', '2013-01-05'],
+                    ['healthy', 60, 80, 80, 60, 85],
+                    ['unhealthy', 40, 20, 20, 40, 15],
                 ],
                 type: 'bar',
                 groups: [
@@ -34,9 +35,22 @@ export default Ember.Component.extend({
                     unhealthy: '#ff0033'
                 },
             },
+            axis: {
+                x: {
+                    type: 'timeseries',
+                    tick: {
+                        format: '%m/%d' //'%Y-%m-%d'
+                     }
+                },
+                y: {
+                    tick: {
+                        values: [0, 25, 50, 75, 100]
+                    }
+                }
+            },
             grid: {
                 y: {
-            lengthines: [{value:0}]
+                    lines: [{value:0}]
                 }
             }
         });

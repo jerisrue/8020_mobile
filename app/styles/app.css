@@ -1,3 +1,58 @@
 /*body > .ember-view {
 	max-height: 40%;
 }*/
+body {
+	background: black;
+}
+
+/*c3-legend-item text,
+c3-axis*/
+/*.c3 text {
+   fill: white;
+}
+
+.c3-axis .tick{
+	color: white;
+}*/
+/*
+.path.domain { stroke: white; }*/
+.tick text {
+	stroke: white;
+}
+
+.c3-legend-item text {
+	stroke: white;
+}
+
+
+/*.c3 path, .c3 line {
+  fill: purple;
+  stroke: orange;
+}*/
+
+/*.c3-chart-arc path {
+  stroke: blue;
+
+}
+.c3-chart-arc text {
+  fill: blue;
+  font-size: 13px;
+}*/
+
+/*.c3-line {
+    stroke-width: 8px;
+}
+
+.c3-circle {
+    fill: red !important;
+}*/
+
+.c3 line, .c3 path {
+  stroke: white !important;
+}
+
+
+/* outline of pie slices in pie graph */
+.c3-chart-arc path {
+	stroke:	black !important;
+}
