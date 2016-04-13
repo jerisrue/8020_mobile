@@ -19,6 +19,9 @@ export default Ember.Component.extend({
 
         var chart = c3.generate({
             bindto: '#chart',
+            size: {
+                height: $(window).height()*.4
+            },
             data: {
                 x: 'x',
                 columns: [
@@ -56,6 +59,12 @@ export default Ember.Component.extend({
                 y: {
                     lines: [{value:0}]
                 }
+            },
+            onresized: function () {
+                //chart.destroy()
+                chart.resize({
+                    height: $(window).height()*.4,
+                });
             }
         });
     });

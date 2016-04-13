@@ -19,6 +19,9 @@ export default Ember.Component.extend({
 
         var chart = c3.generate({
             bindto: '#pie',
+            size: {
+                height: $(window).height()*.4
+            },
             data: {
                 columns: [
                     ['unhealthy', 40],
@@ -35,8 +38,14 @@ export default Ember.Component.extend({
                 hide: true
             },
             tooltip: {
-        		show: false
-			}
+                show: false
+            },
+            onresized: function () {
+                //chart.destroy()
+                chart.resize({
+                    height: $(window).height()*.4,
+                });
+            }
         });
     });
   }
