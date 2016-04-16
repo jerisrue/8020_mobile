@@ -16,7 +16,9 @@ export default Ember.Component.extend({
       console.log('afterRender ran');
 
       //alert("ffstga");
-
+        //debugger;
+        var unheath = this.get('unhealthy');
+        var heath = this.get('healthy');
         var chart = c3.generate({
             bindto: '#pie',
             size: {
@@ -24,8 +26,8 @@ export default Ember.Component.extend({
             },
             data: {
                 columns: [
-                    ['unhealthy', 40],
-                    ['healthy', 60]
+                    ['unhealthy', unheath],
+                    ['healthy', heath]
                 ],
                 type: 'pie',
                 labels: false,

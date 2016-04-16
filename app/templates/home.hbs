@@ -12,9 +12,13 @@
 </nav>
 <div class="container">
 
+	<h1>unhealthy: {{unhealthy}}</h1>
+	<h3><button {{action "incUn"}}>increment unhealthy</button></h3>
+	<h1>healthy: {{healthy}}</h1>
+	<h3><button {{action "incHe"}}>increment healthy</button></h3>
 	<!--div for pie rendering -->
 	<div class="pie-container">
-		{{#render-pie}}
+		{{#render-pie unhealthy=unhealthy healthy=healthy}}
 			<div id="pie"></div>
 		{{/render-pie}}
 	</div>
