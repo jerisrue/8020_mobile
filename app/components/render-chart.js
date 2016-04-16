@@ -20,7 +20,7 @@ export default Ember.Component.extend({
         var chart = c3.generate({
             bindto: '#chart',
             size: {
-                height: $(window).height()*.4
+                height: Ember.$(window).height()*0.4
             },
             data: {
                 x: 'x',
@@ -63,7 +63,7 @@ export default Ember.Component.extend({
             onresized: function () {
                 //chart.destroy()
                 chart.resize({
-                    height: $(window).height()*.4,
+                    height: Ember.$(window).height()*0.4,
                 });
             }
         });
