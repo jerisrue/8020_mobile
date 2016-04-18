@@ -106,9 +106,12 @@ module.exports = function(defaults) {
   });
 
   // D3 and C3 Charting libraries
-  app.import('vendor/d3-3.5.16/d3.min.js');
-  app.import('vendor/c3-0.4.10/c3.min.js');
-  app.import('vendor/c3-0.4.10/c3.min.css');
+  app.import(app.bowerDirectory + '/c3/c3.min.js');
+  app.import(app.bowerDirectory + '/c3/c3.min.css');
+  app.import(app.bowerDirectory + '/d3/d3.min.js');
+  //app.import('vendor/d3-3.5.16/d3.min.js');
+  //app.import('vendor/c3-0.4.10/c3.min.js');
+  //app.import('vendor/c3-0.4.10/c3.min.css');
 
   return app.toTree();
 };
