@@ -17,17 +17,15 @@
 	<h3>healthy: {{healthy}}</h3>
 	<button {{action "incHe"}}>increment healthy</button>
 
-
-	{{c3-chart data=data}}
-
-
+	<!-- pie component -->
+	{{c3-graph data=data legend=legend tooltip=tooltip size=size}}
 
 	<!--div for pie rendering -->
-	<div class="pie-container">
+	{{!--<div class="pie-container">
 		{{#render-pie unhealthy=unhealthy healthy=healthy}}
 			<div id="pie"></div>
 		{{/render-pie}}
-	</div>
+	</div>--}}
 	<!--div for chart rendering -->
 	<div class="chart-container">
 		{{#render-chart}}
