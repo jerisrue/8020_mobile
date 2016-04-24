@@ -12,6 +12,27 @@
 </nav>
 <div class="container">
 
+	{{!--<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th class="col-sm-1">healthy</th>
+				<th class="col-sm-1">unhealthy</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each piece in model}}
+				<tr>
+					<td>
+						{{piece.healthy}}
+					</td>
+					<td>
+						{{piece.unhealthy}}
+					</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>--}}
+
 	<h3>unhealthy: {{unhealthy}}</h3>
 	<button {{action "incUn"}}>increment unhealthy</button>
 	<h3>healthy: {{healthy}}</h3>

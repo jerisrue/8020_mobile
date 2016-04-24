@@ -15,6 +15,9 @@ export default Ember.Route.extend({
 				t.transitionTo('home');
 			}
 	},
+	model: function(){
+		return this.store.findAll('pie');
+	},
 	actions: {
 		willTransition: function(transition){
 			this.baseUrlRedirect(transition);
