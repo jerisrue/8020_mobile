@@ -9,6 +9,9 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.rue.eightytwenty"
+        },
+        "cordova-galaxygear": {
+            "PACKAGE_NAME": "com.rue.eightytwenty"
         }
     },
     "dependent_plugins": {}

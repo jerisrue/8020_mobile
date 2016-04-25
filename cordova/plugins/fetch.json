@@ -6,5 +6,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-galaxygear": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-galaxygear"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

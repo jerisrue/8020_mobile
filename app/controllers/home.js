@@ -60,6 +60,16 @@ export default Ember.Controller.extend({
             self.notifyPropertyChange('data');
         //},500);
         });
+
+        GalaxyGear.onConnect(function(e) {
+            alert("Connection Successfully Established - handle: " + e.handle);
+
+            GalaxyGear.onDataReceived(e.handle, function(e) {
+                alert("Data received - handle: " + e.handle + " data: "+ e.data);
+            });
+
+            GalaxyGear.sendData(e.handle, "Hello From Cordova!");
+        }, alert("fail"));
     },
     actions: {
         incUn: function(){
